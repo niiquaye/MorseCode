@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cstring>
-#include <map>
+#include <unordered_map>
 
 //Purpose: A library to convert words to morse code
 
@@ -13,7 +13,7 @@ class MorseCode {
         
 
         //create hash map to link characters to morse code
-        std::map<char, std::string> morse_map;
+       std::unordered_map<char, std::string> morse_map;
         
         std::string mCode;
         
